@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".attadd"
+    android:background="@drawable/dash">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/fasname"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Attendance "
+            android:textColor="@color/maroon"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="240dp"
+            android:layout_height="137dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Record            Attendance "
+            android:textColor="@color/blue"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/logo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fasname"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/logo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fasname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/selectDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="88dp"
+            android:text="Select Date"
+            android:textSize="20dp"
+            android:backgroundTint="@color/maroon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <Button
+            android:id="@+id/presentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectDateButton"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/blue"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Present"
+            app:layout_constraintStart_toEndOf="@+id/selectDateButton"
+            app:layout_constraintTop_toBottomOf="@+id/selectDateButton" />
+
+        <Button
+            android:id="@+id/absentButton"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/presentButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:text="Absent"
+            app:layout_constraintEnd_toStartOf="@+id/selectDateButton"
+            app:layout_constraintTop_toBottomOf="@+id/selectDateButton" />
+
+        <Spinner
+            android:id="@+id/subjectSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/absentButton"
+            android:layout_centerHorizontal="true"
+            android:minHeight="48dp"
+            android:tooltipText="select dub"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/presentButton"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toEndOf="@+id/absentButton"
+            app:layout_constraintTop_toBottomOf="@+id/selectDateButton" />
+
+        <ListView
+            android:id="@+id/attendanceListView"
+            android:layout_width="391dp"
+            android:layout_height="382dp"
+            android:layout_below="@id/subjectSpinner"
+            android:layout_marginTop="104dp"
+            android:background="#9AFFFFFF"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/presentButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/absentButton"
+            app:layout_constraintTop_toBottomOf="@+id/selectDateButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

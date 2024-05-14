@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dash"
+    tools:context=".calmain">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/fasname"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="GPA Calculator"
+            android:textColor="@color/maroon"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@+id/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Results"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toStartOf="@+id/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fasname"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/logo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fasname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:layout_constraintVertical_bias="0.0" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addsub_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.978"
+                app:srcCompat="@drawable/baseline_add_24"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

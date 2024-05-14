@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calhome"
+    android:background="@drawable/dash">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/fasname"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="GPA Calculator"
+            android:textColor="@color/maroon"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@+id/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Subject           Management"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toStartOf="@+id/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fasname"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/logo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fasname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/credits_input"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="119dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Credits"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/results_input"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="119dp"
+        android:background="@drawable/border"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Results"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credits_input" />
+
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="123dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="188dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Update"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="@+id/results_input"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/results_input" />
+
+        <Button
+        android:id="@+id/delete_button"
+        android:layout_width="123dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="@font/poppins_bold"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Delete"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toStartOf="@+id/update_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/results_input"
+        app:layout_constraintTop_toBottomOf="@+id/results_input" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

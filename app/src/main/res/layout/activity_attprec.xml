@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".attprec"
+    android:background="@drawable/dash">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:id="@+id/fasname"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Attendance"
+            android:textColor="@color/maroon"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="247dp"
+            android:layout_height="137dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Attendance Percentage "
+            android:textColor="@color/blue"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/logo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fasname"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/logo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fasname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/attendancePercentageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="216dp"
+            android:text="Attendance Percentage "
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

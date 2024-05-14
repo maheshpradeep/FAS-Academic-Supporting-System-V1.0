@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uihome"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="900dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-25dp">
+
+        <LinearLayout
+            android:id="@+id/formLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ExtraText,MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="81dp"
+                android:layout_height="151dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/logo1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="598dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/shortnotes"
+                    android:layout_width="355dp"
+                    android:layout_height="92dp"
+                    android:backgroundTint="#6A950101"
+                    android:drawableLeft="@drawable/baseline_edit_note_24"
+                    android:text="Short Notes"
+                    android:textSize="30sp"
+                    app:cornerRadius="30dp" />
+
+
+                <Button
+                    android:id="@+id/resources"
+                    android:layout_width="355dp"
+                    android:layout_height="92dp"
+                    android:backgroundTint="#96202C59"
+                    android:drawableLeft="@drawable/baseline_dataset_linked_24"
+
+                    android:text="Resources"
+                    android:textSize="30sp"
+                    app:cornerRadius="30dp" />
+
+                <Button
+                    android:id="@+id/attendance"
+                    android:layout_width="355dp"
+                    android:layout_height="92dp"
+                    android:backgroundTint="#6A950101"
+                    android:drawableLeft="@drawable/baseline_attribution_24"
+                    android:text="Attendance"
+                    android:textSize="30sp"
+                    app:cornerRadius="30dp" />
+
+                <Button
+                    android:id="@+id/timetable"
+                    android:layout_width="355dp"
+                    android:layout_height="92dp"
+                    android:backgroundTint="#96202C59"
+                    android:drawableLeft="@drawable/baseline_calendar_month_24"
+                    android:text="Time Table"
+                    android:textSize="30sp"
+                    app:cornerRadius="30dp" />
+
+
+                <Button
+                    android:id="@+id/gpa"
+                    android:layout_width="355dp"
+                    android:layout_height="92dp"
+                    android:backgroundTint="#6A950101"
+                    android:drawableLeft="@drawable/baseline_calculate_24"
+                    android:text="GPA Calculator"
+                    android:textSize="28sp"
+                    app:cornerRadius="30dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

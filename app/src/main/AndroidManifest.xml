@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FAS"
+        tools:targetApi="31">
+        <activity
+            android:name=".reslinks"
+            android:exported="false" />
+        <activity
+            android:name=".reshome"
+            android:exported="false" />
+        <activity
+            android:name=".timetable"
+            android:exported="false" />
+        <activity
+            android:name=".attmanagesub"
+            android:exported="false" />
+        <activity
+            android:name=".attprec"
+            android:exported="false" />
+        <activity
+            android:name=".attadd"
+            android:exported="false" />
+        <activity
+            android:name=".atthome"
+            android:exported="false" />
+        <activity
+            android:name=".calupdatesub"
+            android:exported="false" />
+        <activity
+            android:name=".caladdsub"
+            android:exported="false" />
+        <activity
+            android:name=".calcalculation"
+            android:exported="false" />
+        <activity
+            android:name=".calmain"
+            android:exported="false" />
+        <activity
+            android:name=".calhome"
+            android:exported="false" />
+        <activity
+            android:name=".lms"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".drive"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

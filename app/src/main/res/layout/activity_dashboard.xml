@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@drawable/dash">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:id="@+id/fasname"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Faculty of"
+            android:textColor="@color/maroon"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Applied Scinces"
+            android:textColor="@color/blue"
+            android:textSize="40dp"
+            app:layout_constraintEnd_toStartOf="@+id/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fasname"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/logo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fasname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shrotnotes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/shortnotename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/shortnoteimage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Short Notes"
+                        android:textColor="@color/maroon"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/shortnoteimage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/notes" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/resources"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/resourcesename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/resourcesimage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Resources"
+                        android:textColor="@color/maroon"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/resourcesimage"
+                        android:layout_width="90dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/resources" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row1">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/attendance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/attendancename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendanceimage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Attendance"
+                        android:textColor="@color/maroon"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/attendanceimage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/attendance" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gpa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/gpaname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gpaimage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="GPA Calculator"
+                        android:textColor="@color/maroon"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/gpaimage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/gpa" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row2">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timetable"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/timetablename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/timetableimage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Timetable"
+                        android:textColor="@color/maroon"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/timetableimage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/timetable" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lms"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lmsname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lmsimage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="FAS-LMS"
+                        android:textColor="@color/maroon"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/lmsimage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/lms" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
